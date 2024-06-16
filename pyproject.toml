@@ -24,6 +24,8 @@ dev-dependencies = [
     "tox",
     "tox-uv>=1.7.0",
     "twine>=5.1.0",
+    "pytest-benchmark>=4.0.0",
+    "pytest-html>=4.1.1",
 ]
 
 [tool.hatch.metadata]
@@ -88,7 +90,7 @@ known-first-party = ["funcalc"]
 max-args = 7
 
 [tool.pytest.ini_options]
-addopts = "--cov funcalc --cov-report html:.reports/html --cov-report term --random-order -p no:warnings -v"
+addopts = "--cov funcalc --cov-report html:.reports/html --html .reports/pytest.html --cov-report term --random-order -p no:warnings -v"
 minversion = "8.0"
 pythonpath = ["src", "py_tests"]
 testpaths = "py_tests"

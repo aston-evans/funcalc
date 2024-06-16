@@ -62,10 +62,14 @@ jedi==0.19.1
 jeepney==0.8.0
     # via keyring
     # via secretstorage
+jinja2==3.1.4
+    # via pytest-html
 keyring==25.2.1
     # via twine
 markdown-it-py==3.0.0
     # via rich
+markupsafe==2.1.5
+    # via jinja2
 matplotlib-inline==0.1.7
     # via ipython
 mdurl==0.1.2
@@ -101,6 +105,8 @@ ptyprocess==0.7.0
     # via pexpect
 pure-eval==0.2.2
     # via stack-data
+py-cpuinfo==9.0.0
+    # via pytest-benchmark
 pycparser==2.22
     # via cffi
 pygments==2.18.0
@@ -111,11 +117,18 @@ pyproject-api==1.6.1
     # via tox
 pytest==8.2.2
     # via pytest-asyncio
+    # via pytest-benchmark
     # via pytest-cov
+    # via pytest-html
+    # via pytest-metadata
     # via pytest-mock
     # via pytest-random-order
 pytest-asyncio==0.23.7
+pytest-benchmark==4.0.0
 pytest-cov==5.0.0
+pytest-html==4.1.1
+pytest-metadata==3.1.1
+    # via pytest-html
 pytest-mock==3.14.0
 pytest-random-order==1.1.1
 readme-renderer==43.0
